@@ -34,6 +34,6 @@ var interval = setInterval(() => {
     flushTime();
     flushProgress();
     flushProgressTip();
-}, 10);
+}, 17);
 
 setTimeout(()=>{if(end_time - getNow() <= 0) clearInterval(interval)},100);
