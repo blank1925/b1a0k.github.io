@@ -1,0 +1,30 @@
+html,body,.content{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height:100%;
+    width:100%;
+}
+.content{
+    background-color: #263238;
+    color: #cfd8dc;
+    font-family: monospace;
+    font-size: 4rem;
+    text-align: center;
+}
+.progress{
+    background: #cfd8dc;
+    border: none;
+    width: 90%;
+    height: 2rem;
+    -webkit-appearance: none;
+}
+::-webkit-progress-value{
+    background:#455a64;
+ }
+
+ .progress-tip{
+     font-size: 1.75rem;
+     margin: 0 auto;
+     border-left: 5px #cfd8dc;
+ }
