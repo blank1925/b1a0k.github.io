@@ -1,6 +1,5 @@
 var start_time = 1492669206000
 var end_time = 1587392400000
-// var end_time = 1587104406000
 
 function flushTime() {
     var time_view = document.getElementsByClassName("end-time")[0];
@@ -20,7 +19,6 @@ function flushProgress() {
 }
 
 function getNow() {
-    // return 1587402400000
     return new Date().getTime();
 }
 
@@ -36,6 +34,6 @@ var interval = setInterval(() => {
     flushTime();
     flushProgress();
     flushProgressTip();
-}, 100);
+}, 10);
 
 setTimeout(()=>{if(end_time - getNow() <= 0) clearInterval(interval)},100);
