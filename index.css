@@ -5,14 +5,22 @@ html,body,.content{
     height:100%;
     width:100%;
 }
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://ling-1253775469.cos.ap-guangzhou.myqcloud.com/Roboto-Medium.ttf?q-sign-algorithm=sha1&q-ak=AKIDlKeiV2SK4YmlTt9yd2A2ez3qNefP874o&q-sign-time=1587305260;1587391660&q-key-time=1587305260;1587391660&q-header-list=&q-url-param-list=&q-signature=24de3c020b194a7ad4805f1a3c4ac3e0db872b29) format('ttf');
+    unicode-range: U+0370-03FF;
+  }
 .content{
     background-color: #263238;
     color: #cfd8dc;
-    font-family: monospace;
+    font-family: 'Roboto';
     font-size: 4rem;
     text-align: center;
 }
-.progress{
+/* .progress{
     background: #cfd8dc;
     border: none;
     width: 90%;
@@ -27,4 +35,4 @@ html,body,.content{
      font-size: 1.75rem;
      margin: 0 auto;
      border-left: 5px #cfd8dc;
- }
+ } */
