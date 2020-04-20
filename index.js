@@ -1,5 +1,5 @@
-var start_time = new Date('2017-04-20 14:20:06').getTime()
-var end_time = new Date('2020-04-20 22:20:06').getTime()
+var start_time = 1492669206000
+var end_time = 1587392406000
 
 function flushTime() {
     var time_view = document.getElementsByClassName("end-time")[0]
