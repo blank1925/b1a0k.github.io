@@ -1,13 +1,15 @@
-var start_time = 1492669206000
-var end_time = 1587392400000
+var start_time = new Date('2017-04-20 14:20:06').getTime()
+var end_time = new Date('2020-04-20 22:20:06').getTime()
 
 function flushTime() {
-    var time_view = document.getElementsByClassName("end-time")[0];
-    if (!time_view) return;
-    var current_timestamp = getNow();
-    let left_time = end_time - current_timestamp;
+    var time_view = document.getElementsByClassName("end-time")[0]
+    if (!time_view) return
+    var current_timestamp = getNow()
+    let left_time = end_time - current_timestamp
 
-    time_view.innerHTML = left_time <= 0 ? time_view.parentElement.innerHTML = "End on now." : +left_time;
+    time_view.innerHTML = left_time <= 0 ? time_view.parentElement.innerHTML = "End on now." : +left_time
+
+    return left_time
 }
 
 // function flushProgress() {
@@ -19,7 +21,7 @@ function flushTime() {
 // }
 
 function getNow() {
-    return new Date().getTime();
+    return new Date().getTime()
 }
 
 // function flushProgressTip() {
@@ -31,9 +33,9 @@ function getNow() {
 // }
 
 var interval = setInterval(() => {
-    flushTime();
+    flushTime()
     // flushProgress();
     // flushProgressTip();
 }, 17);
 
-setTimeout(()=>{if(end_time - getNow() <= 0) clearInterval(interval)},100);
+setTimeout(()=>{if(end_time - getNow() <= 0) clearInterval(interval)},100)
